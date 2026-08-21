@@ -9,11 +9,9 @@ button.addEventListener("click", function (e) {
   inputs.forEach((input) => {
     let inp = Number(input.value);
     marks.push(inp);
-    
-    input.value = ""
-  });
 
-    
+    input.value = "";
+  });
 
   let totalMarks = marks.reduce((a, b) => a + b, 0);
 
@@ -36,5 +34,5 @@ button.addEventListener("click", function (e) {
   result.innerHTML += `Total Marks: ${totalMarks}<br>
   Percentage: ${percentage} `;
 
-  marks=[];
+  marks = [];
 });
