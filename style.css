@@ -69,6 +69,17 @@ input{
  }
 
  .input-group label {
-  width: 30%; 
+  width: 20%; 
+  font-size: smaller;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+h1{
+    text-align: center;
 }
 }
