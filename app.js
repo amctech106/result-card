@@ -20,7 +20,7 @@ button.addEventListener("click", function (e) {
   result.innerHTML = "";
 
   for (let i = 0; i < marks.length; i++) {
-    if (marks[i] < 0 || marks[i] > 100 || isNaN(marks)) {
+    if (marks[i] < 0 || marks[i] > 100 || isNaN(marks[i])) {
       result.innerHTML = "Please enter valid marks between 0 and 100.";
       return;
     }
