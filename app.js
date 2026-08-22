@@ -19,6 +19,13 @@ button.addEventListener("click", function (e) {
 
   result.innerHTML = "";
 
+  for (let i = 0; i < marks.length; i++) {
+    if (marks[i] < 0 || marks[i] > 100 || isNaN(marks)) {
+      result.innerHTML = "Please enter valid marks between 0 and 100.";
+      return;
+    }
+  }
+
   if (percentage >= 80) {
     result.innerHTML = `Grade: A <br>`;
   } else if (percentage >= 70) {
